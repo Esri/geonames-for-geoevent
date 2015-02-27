@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	<reference id="messagingService" interface="com.esri.ges.messaging.Messaging" />
+	
+	<bean id="geoNamesOSMPOIProcessorServiceBean" 
+	    class="com.esri.geoevent.processor.geonames.GeoNamesOSMPOIProcessorService" 
+	    activation="eager">
+		<property name="bundleContext" ref="blueprintBundleContext" />
+    	<property name="messaging" ref="messagingService" />
+	</bean>
+
+	<bean id="geoNamesWikipediaProcessorServiceBean" 
+	    class="com.esri.geoevent.processor.geonames.GeoNamesWikipediaProcessorService" 
+	    activation="eager">
+		<property name="bundleContext" ref="blueprintBundleContext" />
+    	<property name="messaging" ref="messagingService" />
+	</bean>
+	
+	<service id="geoNamesOSMPOIProcessorService" ref="geoNamesOSMPOIProcessorServiceBean" 
+	    interface="com.esri.ges.processor.GeoEventProcessorService"/>
+	<service id="geoNamesWikipediaProcessorService" ref="geoNamesWikipediaProcessorServiceBean" 
+	    interface="com.esri.ges.processor.GeoEventProcessorService"/>
+</blueprint>
