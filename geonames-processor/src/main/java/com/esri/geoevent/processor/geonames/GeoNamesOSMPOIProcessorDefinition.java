@@ -107,28 +107,12 @@ public class GeoNamesOSMPOIProcessorDefinition extends GeoEventProcessorDefiniti
 	@Override
 	public String getLabel()
 	{
-		/**
-		 * Note: by using the ${myBundle-symbolic-name.myProperty} notation, the framework will attempt to replace the
-		 * string with a localized string in your properties file.
-		 */
-		// return "${reversegeocode.gep.reversegeocode-processor.PROCESSOR_LABEL}";
-		return "GeoNames OpenStreetMap Lookup";
+		return "${com.esri.geoevent.processor.geonames-processor.PROCESSOR_LABEL}";
 	}
 
 	@Override
 	public String getDescription()
 	{
-		/**
-		 * Note: by using the ${myBundle-symbolic-name.myProperty} notation, the framework will attempt to replace the
-		 * string with a localized string in your properties file.
-		 */
-		// return "${reversegeocode.gep.reversegeocode-processor.PROCESSOR_DESC}";
-		return "Calls the GeoNames web service and fetches the OpenStreetMap Points of Interest near the GeoEvent.";
-	}
-
-	@Override
-	public String getContactInfo()
-	{
-		return "kgorton@esri.com";
+		return "${com.esri.geoevent.processor.geonames-processor.PROCESSOR_DESC}";
 	}
 }

@@ -134,10 +134,4 @@ public class GeoNamesWikipediaProcessorDefinition extends GeoEventProcessorDefin
 		// return "${reversegeocode.gep.reversegeocode-processor.PROCESSOR_DESC}";
 		return "Calls the GeoNames web service and fetches the georeferenced Wikipedia articles near the GeoEvent.";
 	}
-
-	@Override
-	public String getContactInfo()
-	{
-		return "kgorton@esri.com";
-	}
 }
