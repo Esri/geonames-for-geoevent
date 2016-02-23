@@ -1,6 +1,6 @@
 # geonames-for-geoevent
 
-ArcGIS 10.3.x GeoEvent Extension for Server sample OpenStreetMap and Wikipedia GeoNames Lookup Processors.
+ArcGIS 10.4 GeoEvent Extension for Server sample OpenStreetMap and Wikipedia GeoNames Lookup Processors.
 
 The GeoNames Lookup Processors contain two sample processors called GeoNames OpenStreetMap Lookup Processor and GeoNames Wikipedia Lookup Processor. These processors can be added to a GeoEvent Service to perform the processing described below.
 
