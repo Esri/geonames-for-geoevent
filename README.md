@@ -34,7 +34,7 @@ Installing the built jar files:
 
 ## Resources
 
-* [Download the connector's tutorial](http://www.arcgis.com/home/item.html?id=1e05f2aafb1c41549966f6534314f044) from the ArcGIS GeoEvent Extension Gallery
+* [Download the connector's tutorial](https://www.arcgis.com/home/item.html?id=d9db42537c74437da84288930ced6c81) from the ArcGIS GeoEvent Extension Gallery
 * [ArcGIS GeoEvent Extension for Server Resources](http://links.esri.com/geoevent)
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * [twitter@esri](http://twitter.com/esri)
